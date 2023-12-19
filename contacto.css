@@ -603,11 +603,13 @@ body {
     margin-left: 650px;
     margin-top: -425px;
     border-radius: 10px;
+  
   }
 
 
   .mapa iframe {
     border-radius: 10px ;
+    height: 420px;
 }
 
 
@@ -693,3 +695,66 @@ body {
     }
 }
 
+
+/* Estilos para la sección del pie de página */
+.final-footer {
+  background-color: #2f4858;  /* Fondo azul oscuro */
+  border-top: 5px solid #55DDE0;  /* Borde superior de 5px de color azul claro */
+  margin-right: -10%;  /* Margen derecho negativo del 10% para corregir overflow */
+  margin-top: 2%;  /* Margen superior del 2% */
+}
+
+/* Estilos para la sección de derechos de autor en el pie de página */
+.copy-footer {
+  padding: 20px 15px;  /* Relleno de 20px arriba y abajo, 15px a los lados */
+  text-align: center;  /* Texto centrado */
+}
+
+.copy-footer span {
+  padding-right: 10px;  /* Espaciado a la derecha de 10px para elementos span */
+}
+
+.copy-footer a {
+  color: white;  /* Color del texto blanco */
+  padding: 0 10px;  /* Espaciado a los lados de 0 y 10px */
+  text-decoration: underline;  /* Subrayado para enlaces */
+}
+
+/* Estilos responsivos para dispositivos con pantalla de hasta 1024px */
+@media screen and (max-width: 1024px) {
+  /* Ajustes para la primera sección del pie de página */
+  .first-footer {
+    padding: 50px 25px;  /* Relleno modificado para pantallas más pequeñas */
+    flex-direction: column;  /* Cambia la dirección del contenedor flex a columna */
+  }
+
+  /* Ajustes para la segunda sección del pie de página */
+  .second-footer .container {
+    flex-direction: column;  /* Cambia la dirección del contenedor flex a columna */
+    gap: 20px;  /* Espaciado entre elementos de 20px */
+  }
+
+  /* Ajuste para el pie de página con información de contacto */
+  .phone-footer {
+    margin-bottom: 0;  /* Elimina el margen inferior */
+  }
+}
+
+/* Estilos generales para el contenedor del pie de página */
+.footer-container {
+  position: relative;  /* Posición relativa para facilitar la posición absoluta de elementos internos */
+}
+
+/* Estilos para mensajes de confirmación */
+.confirmation-message {
+  position: absolute;  /* Posición absoluta para ubicar el mensaje de confirmación */
+  margin-left: 10%;  /* Margen izquierdo del 10% */
+}
+
+/* Estilos para el elemento con clase 'telefono' */
+.telefono {
+  color: white;  /* Color del texto blanco */
+  font-weight: bold;  /* Negrita para el texto */
+  margin-left: -5%;  /* Margen izquierdo negativo del 5% */
+  letter-spacing: 2px;  /* Espaciado de letras de 2px */
+}
